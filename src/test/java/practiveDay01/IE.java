@@ -24,6 +24,7 @@ public class IE {
 	
 	@Test
 	public void searchONBaidu() {
+		iewb.manage().window().maximize();
 		iewb.get("http://www.baidu.com");
 		
 		//ie不信任网址时我们需要添加

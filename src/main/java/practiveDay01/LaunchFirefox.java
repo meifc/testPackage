@@ -46,7 +46,12 @@ public class LaunchFirefox {
 		//ie不信任网址时我们需要添加
 		//iewb.get("javascript:document.getElementById('overridelink').click();"); 
 		//System.out.println(ffwb.getWindowHandle());
-
+		
+		try {
+			Thread.sleep(5000);
+		}catch(InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	@AfterClass
