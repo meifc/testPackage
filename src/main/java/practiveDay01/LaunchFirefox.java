@@ -18,8 +18,8 @@ public class LaunchFirefox {
 		System.setProperty("webdriver.firefox.bin", "C:\\Program Files\\Mozilla Firefox\\firefox.exe");
 		System.setProperty("webdriver.gecko.driver", projectPath+"/tools/geckodriver.exe");
 		
-		//File firebug=new File(projectPath+"/tools/firebug-1.12.1-fx.xpi");
-		//File firepath=new File(projectPath+"/tools/firepath-0.9.7-fx.xpi");
+		//File firebug=new File(projectPath+"/tools/firebug-1.12.1-fx.xpi"); firebug@software.joehewitt.com.xpi
+		//File firepath=new File(projectPath+"/tools/firepath-0.9.7-fx.xpi"); FireXPath@pierre.tholence.com.xpi
 		firefoxProfile = new FirefoxProfile(); 
 		try {
 			//firefoxProfile.addExtension(firebug);
