@@ -10,7 +10,7 @@ public class MutipleBrowsersTest {
 	
 	@BeforeMethod(groups="browsers")
 	public  void inital() {
-		browsers=new Browsers(BrowsersType.firefox); 
+		browsers=new Browsers(BrowsersType.ie); 
 		webdriver=browsers.driver;
 	}
 	
@@ -23,19 +23,19 @@ public class MutipleBrowsersTest {
 	@Test(groups="submodule2")
 	public void submodule2() {
 		webdriver.get("http://www.bing.com");
-		System.out.println("test submodule1   ---  test  bing----");
+		System.out.println("test submodule2   ---  test  bing----");
 	}
 	
 	@Test(groups="submodule3")
 	public void submodule3() {
 		webdriver.get("http://www.so.com");
-		System.out.println("test submodule1   ---  test  so----");
+		System.out.println("test submodule3   ---  test  so----");
 	}
 	
 	@Test(groups="submodule4")
 	public void submodule4() {
 		webdriver.get("http://www.alipay.com");
-		System.out.println("test submodule1   ---  test  alipay----");
+		System.out.println("test submodule4   ---  test  alipay----");
 	}
 	
 	@AfterMethod(groups="browsers")

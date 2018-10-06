@@ -13,7 +13,7 @@ public class BrowsersTest {
 	
 	@BeforeClass
 	public void beforeClass() {
-		Browsers browsers=new Browsers(BrowsersType.firefox);
+		Browsers browsers=new Browsers(BrowsersType.ie);
 		dirver=browsers.driver;
 	}
 	

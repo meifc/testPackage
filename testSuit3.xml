@@ -24,7 +24,7 @@
   	
   	<run>
   		<include name="browsers"></include>
-  		<include name="FF"></include>
+  		<include name="IE"></include>
   	</run>
   </groups>
     <classes>
