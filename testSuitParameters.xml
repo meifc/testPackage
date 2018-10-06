@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="practivethree">
+<parameter name="platform" value="FF"></parameter>
+<parameter name="TestData" value="\tools\test3.properties"></parameter>
+  <test thread-count="5" name="practivethree" preserve-order="true">
+
+    <classes>
+      <class name="practivethree.PracticeParameters1TestNG">
+      	
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
