@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite3">
-<parameter name="platform" value="">FF</parameter>
+<parameter name="platform" value="FF"></parameter>
   <test thread-count="5" name="practivetwo" preserve-order="true">
   <groups>
   	<define name="submodule1"></define>
@@ -24,7 +24,7 @@
   	
   	<run>
   		<include name="browsers"></include>
-  		<include name="IE"></include>
+  		<include name="FF"></include>
   	</run>
   </groups>
     <classes>

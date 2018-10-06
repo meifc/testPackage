@@ -8,10 +8,24 @@ public class MutipleBrowsersTest {
 	private Browsers browsers=null;
 	
 	
-	@BeforeMethod(groups="browsers")
+	/*@BeforeMethod(groups="browsers")
 	public  void inital() {
 		browsers=new Browsers(BrowsersType.ie); 
 		webdriver=browsers.driver;
+	}*/
+	
+	@Parameters({"platform"})
+	@BeforeMethod(groups="browsers")
+	public void inital(@Optional("aaa") String platform) {
+		if(platform.equals("FF"))
+			browsers=new Browsers(BrowsersType.firefox); 
+		else if(platform.equals("IE"))
+			browsers=new Browsers(BrowsersType.ie); 
+		else if(platform.equals("chrome"))
+			browsers=new Browsers(BrowsersType.chrome); 
+		
+			webdriver=browsers.driver;
+		
 	}
 	
 	@Test(groups="submodule1")

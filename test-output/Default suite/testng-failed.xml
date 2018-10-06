@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practicetwo.BrowsersTest">
+      <class name="practicethree.PracticeParameters1TestNG">
         <methods>
-          <include name="start"/>
-          <include name="beforeClass"/>
+          <include name="testParameters1" invocation-numbers="0"/>
         </methods>
-      </class> <!-- practicetwo.BrowsersTest -->
+      </class> <!-- practicethree.PracticeParameters1TestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
