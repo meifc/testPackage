@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite3">
+<parameter name="platform" value="">FF</parameter>
+  <test thread-count="5" name="practivetwo" preserve-order="true">
+  <groups>
+  	<define name="submodule1"></define>
+  	<define name="submodule2"></define>
+  	<define name="submodule3"></define>
+  	<define name="submodule4"></define>
+  	
+  	<define name="IE">
+  		<include name="submodule1"></include>
+  		<include name="submodule3"></include>
+  	</define>
+  	<define name="FF">
+  		<include name="submodule2"></include>
+  		<include name="submodule4"></include>
+  	</define>
+  	<define name="chrome">
+  		<include name="submodule3"></include>
+  		<include name="submodule2"></include>
+  	</define>
+  	
+  	<run>
+  		<include name="browsers"></include>
+  		<include name="FF"></include>
+  	</run>
+  </groups>
+    <classes>
+      <class name="practicetwo.MutipleBrowsersTest">
+      	
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
